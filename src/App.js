@@ -22,6 +22,7 @@ function App() {
   <Navbar/>
     
      <Routes>
+    
       <Route path="/" element={<Home/>}/>
       <Route path="/Tp1" element={ <Tp1_react/>}/>
       <Route path="/Tp3" element={<Tp3/>}/>
