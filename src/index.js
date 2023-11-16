@@ -9,14 +9,10 @@ import Contex, { Modepage } from './darckmode/Contex';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <Contex>
-   <BrowserRouter>
+   <BrowserRouter basename='CC1_react'>
   <App />
   </BrowserRouter>
  </Contex>
-  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
