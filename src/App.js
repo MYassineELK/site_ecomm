@@ -19,7 +19,7 @@ function App() {
   <div className=' w-full sm:w-full ease-in-out duration-700'  style={{backgroundColor:dark?"#222"  :"white",color:dark?"#fff"  :"" }}>
   <center>
    
-    <Navbar/>
+  <Navbar/>
     
      <Routes>
       <Route path="/" element={<Home/>}/>

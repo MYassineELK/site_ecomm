@@ -12,7 +12,6 @@ export default function Api() {
     const [imag8,setimage8]=useState()
     const [datas,setdata]=useState([])
     const [page,setpage]=useState(1)
-
     const pageadd=()=>{
        if (page!==20) {
         setpage(page+1)

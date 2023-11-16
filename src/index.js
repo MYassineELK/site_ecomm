@@ -9,7 +9,7 @@ import Contex, { Modepage } from './darckmode/Contex';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <Contex>
-   <BrowserRouter >
+   <BrowserRouter>
   <App />
   </BrowserRouter>
  </Contex>
