@@ -16,7 +16,7 @@ import Home from './Home';
 function App() {
   const {dark}=useContext(Modepage)
   return (
-  <div className=' w-full sm:w-full ease-in-out duration-700'  style={{backgroundColor:dark?"#222"  :"white",color:dark?"#fff"  :"" }}>
+  <div className=' w-full sm:w-full ease-in-out duration-700'  style={{backgroundColor:dark?"#222"  :"white",color:dark?"#fff"  : "" }}>
   <center>
    
   <Navbar/>

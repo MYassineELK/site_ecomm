@@ -4,15 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import Contex, { Modepage } from './darckmode/Contex';
+import Contex from './darckmode/Contex';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <Contex>
-   <BrowserRouter basename='CC1_react'>
+
+  <BrowserRouter basename='CC1_react'>
+   <Contex>
   <App />
+  </Contex>
   </BrowserRouter>
- </Contex>
+ 
+  
+
 );
 
 reportWebVitals();

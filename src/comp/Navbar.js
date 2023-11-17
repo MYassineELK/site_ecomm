@@ -8,7 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Modepage } from '../darckmode/Contex';
 import { useContext } from 'react';
-
+import { Link } from 'react-router-dom';
 function OffcanvasExample() {
   const {dark,setdark}=useContext(Modepage)
   return (
@@ -41,12 +41,18 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body >
                 <Nav className="justify-content-end flex-grow-1  pe-3">
-                  <Nav.Link href="/" ><p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Accueil</p></Nav.Link>
-                  <Nav.Link href="/Tp1" ><p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp1 raect</p></Nav.Link>
-                  <Nav.Link href="/Tp2" ><p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp2 raect</p></Nav.Link>
-                  <Nav.Link href="/Tp3" ><p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp3 raect</p></Nav.Link>
-                  <Nav.Link href="/Tp4" ><p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp4 raect</p></Nav.Link>
-                  <Nav.Link href="/Tp5" ><p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp5 raect</p></Nav.Link>
+                  
+                  <Nav.Link >  <Link to={"/"}> <p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Accueil</p></Link> </Nav.Link>
+                  
+                  <Nav.Link >  <Link to={"/Tp1"}> <p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp1 react</p></Link> </Nav.Link>
+                  
+                  <Nav.Link >  <Link to={"/Tp2"}> <p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp2 react</p></Link> </Nav.Link>
+                  
+                  <Nav.Link >  <Link to={"/Tp3"}> <p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp3 react</p></Link> </Nav.Link>
+                  
+                  <Nav.Link >  <Link to={"/Tp4"}> <p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp4 react</p></Link> </Nav.Link>
+                  
+                  <Nav.Link >  <Link to={"/Tp5"}> <p className=' text-xl text-gray-700 hover:border-l-4 hover:border-l-red-400  hover:w-24'>Tp5 raect</p></Link> </Nav.Link>
 
                   </Nav>
               </Offcanvas.Body>
