@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import "./navbar.css"
+import CloseButton from 'react-bootstrap/CloseButton';
+
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -14,7 +16,7 @@ function OffcanvasExample() {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 ">
           <Container fluid>
             <Navbar.Brand href="#">Accueil</Navbar.Brand>
             <label className="switch">
@@ -25,19 +27,27 @@ function OffcanvasExample() {
 </label>
 
           
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand} `} />
+          
             <Navbar.Offcanvas 
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
-              className=" w-64"
+              
+              
             >
+          
     
-    <Offcanvas.Header closeButton >
+    <Offcanvas.Header  >
 
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Menu
-                </Offcanvas.Title>
+                </Offcanvas.Title>    
+                <Offcanvas.Header className='animate-bounce' closeButton style={{backgroundImage: `url(${require("./crossed.png")})`,backgroundRepeat:"no-repeat",backgroundPosition:"center"}}>
+  
+
+                </Offcanvas.Header>
+
               </Offcanvas.Header>
               <Offcanvas.Body >
                 <Nav className="justify-content-end flex-grow-1  pe-3">

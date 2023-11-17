@@ -11,7 +11,8 @@ import Api from "./tp5/Api"
 import { useContext } from 'react';
 import Contex, {Modepage} from "./darckmode/Contex"
 import Home from './Home';
-
+import Nave from "./comp/Navbar2"
+import { Nav } from 'react-bootstrap';
 
 function App() {
   const {dark}=useContext(Modepage)
@@ -20,6 +21,7 @@ function App() {
   <center>
    
   <Navbar/>
+ 
     
      <Routes>
     
